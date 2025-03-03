@@ -32,18 +32,19 @@ int main()
             {
                 printf("(%.2lf, %.2lf, %.2lf) la tam giac thuong\n",a,b,c);
             }
+            double C=0;
+            C = a+b+c;
+            printf("Chu vi tam giac = %.2lf\n",C);
+            double S=0, P=0;
+            P = (a + b + c) / 2;
+            S= sqrt(P * (P - a) * (P - b) * (P - c));
+            printf("Dien tich tam giac = %.2lf\n",S);
         }
         else
         {
             printf("Khong hop le\n");
         }
     }
-    double C=0;
-    C = a+b+c;
-    printf("Chu vi tam giac = %.2lf\n",C);
-    double S=0, P=0;
-    P = (a + b + c) / 2;
-    S= sqrt(P * (P - a) * (P - b) * (P - c));
-    printf("Dien tich tam giac = %.2lf\n",S);
     return 0;
 }
+
