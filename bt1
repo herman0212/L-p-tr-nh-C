@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    double x;
+    scanf("%.2lf", &x);
+    printf("%.2lf\n", x*x);
+    printf("%.2lf\n", x*x*x);
+    printf("%.2lf\n", x*x*x*x);
+    return 0;
+}
