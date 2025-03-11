@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int x;
+    scanf("%d", &x);
+    if (x <= 1)
+    {
+        printf("%d khong phai so nguyen to\n", x);
+        return 0;
+    }
+    int ktra = 1;
+    for (int i = 2; i <= sqrt(x); i++)
+    {
+        if (x % i == 0)
+        {
+            ktra = 0;
+            break;
+        }
+    }
+    if (ktra)
+    {
+        printf("%d la so nguyen to\n", x);
+    }
+    else
+    {
+        printf("%d khong phai so nguyen to\n", x);
+    }
+    return 0;
+}
