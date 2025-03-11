@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    double R;
+    const double PI = 3.141592653589793;
+    scanf("%lf", &R);
+    double S = 4*PI*R*R;
+    double V = (4/3)*PI*R*R*R;
+    printf("Dien tich = %.2lf\n2", S);
+    printf("The tich  = %.2lf", V);
+}
