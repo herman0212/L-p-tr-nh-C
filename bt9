@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int n;
+    double sum=0;
+    double fact=1.0;
+    scanf("%d",&n);
+    for(int i=0; i<=n; i++)
+    {
+        if(i>0)
+        {
+            fact = fact * i;
+            sum = sum + 1.0/fact;
+        }
+    }
+    printf("%d! = %.10lf\n", n, sum);
+    return 0;
+}
